@@ -1,6 +1,5 @@
 #% if spegel_enabled %#
 ---
-# yaml-language-server: $schema=https://raw.githubusercontent.com/fluxcd-community/flux2-schemas/main/ocirepository-source-v1.json
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: OCIRepository
 metadata:
@@ -11,6 +10,6 @@ spec:
     mediaType: application/vnd.cncf.helm.chart.content.v1.tar+gzip
     operation: copy
   ref:
-    tag: 0.4.0
+    tag: 0.5.1
   url: oci://ghcr.io/spegel-org/helm-charts/spegel
 #% endif %#
