@@ -2,6 +2,8 @@ set quiet
 set shell := ['bash', '-euo', 'pipefail', '-c']
 set script-interpreter := ['bash', '-euo', 'pipefail']
 
+import? '.justfiles/justfile'
+
 [group: 'bootstrap']
 mod? bootstrap 'bootstrap'
 
